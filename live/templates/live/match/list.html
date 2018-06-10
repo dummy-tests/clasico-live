@@ -1,0 +1,170 @@
+{% extends "live/base.html" %}
+{% load static %}
+{% block title %}Samer live{% endblock %}
+
+{% block content %}
+            
+                <div class="select-day">
+                    <ul class="b-color-1 color-1 ">
+                        <li name="tomorrow">
+                            <div class="cell">
+                                مباريات الغد                                      
+                            </div>
+                        </li>
+                        <li name="today" class="active">
+                            <div class="cell">
+                                مباريات اليوم
+                            </div>
+                        </li>
+                        <li name="yesterday">
+                            <div class="cell">
+                                مباريات الامس
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            
+                <div class="day" id="yesterday">
+                    {% for match in matchs_yesterday %}
+                    <div class="card-match b-color-2 color-1 ">
+                        <div class="card-match-up .b-color-2">
+                            <ul>
+                                <li>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_home_team_1}}.png" alt="{{match.logo_home_team_1}}">
+                                    </div>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_home_team_1}} </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="result-left ">0</span>
+                                    <a href="{{ match.get_absolute_url }}"><button class="noneHover color-1">{{match.status_match}}</button></a>
+                                    <span class="result-right ">0</span>
+                                </li>
+                                <li>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_guest_team_2}}</p>
+                                    </div>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_guest_team_2}}.png" alt="{{match.logo_guest_team_2}}">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-match-down b-color-2   color-1">
+                            <ul>
+                                <li>
+                                    <p class="en time">GMT {{match.match_time}}</p>
+
+                                </li>
+                                <li>
+                                    <p>{{match.lig}}</p>
+                                </li>
+                                <li>
+                                    <p class="en">{{match.channel}}</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="day active" id="today">
+                    {% for match in matchs_today %}
+                    <div class="card-match b-color-2 color-1 ">
+                        <div class="card-match-up ">
+                            <ul>
+                                <li>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_home_team_1}}.png" alt="{{match.logo_home_team_1}}">
+                                    </div>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_home_team_1}} </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="result-left ">0</span>
+                                    <a href="{{ match.get_absolute_url }}"><button class="color-1 noneHover">{{match.status_match}}</button></a>
+                                    <span class="result-right ">0</span>
+                                </li>
+                                <li>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_guest_team_2}}</p>
+                                    </div>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_guest_team_2}}.png" alt="{{match.logo_guest_team_2}}">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-match-down    color-1">
+                            <ul>
+                                <li>
+                                    <p class="en time"> GMT {{match.match_time}}</p>
+
+                                </li>
+                                <li>
+                                    <p>{{match.lig}}</p>
+                                </li>
+                                <li>
+                                    <p class="en"> {{match.channel}}</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="day" id="tomorrow">
+                    {% for match in matchs_tomorrow %}
+                    <div class="card-match b-color-2 color-1 ">
+                        <div class="card-match-up .b-color-2">
+                            <ul>
+                                <li>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_home_team_1}}.png" alt="{{match.logo_home_team_1}}">
+                                    </div>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_home_team_1}} </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="result-left ">0</span>
+                                    <a><button  class="noneHover color-1">{{match.status_match}}</button></a>
+                                    <span class="result-right ">0</span>
+                                </li>
+                                <li>
+                                    <div class="name-team">
+                                        <p> {{match.arabic_guest_team_2}}</p>
+                                    </div>
+                                    <div class="logo-team">
+                                        <img src="../../../static/imag/{{match.logo_guest_team_2}}.png" alt="{{match.logo_guest_team_2}}">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-match-down b-color-2   color-1">
+                            <ul>
+                                <li>
+                                    <p class="en time">GMT {{match.match_time}}</p>
+
+                                </li>
+                                <li>
+                                    <p>{{match.lig}}</p>
+                                </li>
+                                <li>
+                                    <p class="en">{{match.channel}}</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            
+
+
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'live/base.html' %}
+{% block content %}
+
+
+<div class="day active">
+<div class="card-match card-match-live  b-color-2 color-1 ">
+    <div class="card-match-up  .card-match-live-up  .b-color-2">
+        <ul>
+            <li>
+                <div class="logo-team">
+                    <img src="../../../static/imag/{{match.logo_home_team_1}}.png" alt="{{match.logo_home_team_1}}">
+                </div>
+                <div class="name-team">
+                    <p> {{match.arabic_home_team_1}} </p>
+                </div>
+            </li>
+            <li>
+                
+                <span class="result-left en">0</span>
+                <button style="border: none;" class="color-1">جارية الان</button>
+                <span class="result-right en">0</span>
+
+            </li>
+            <li>
+                <div class="name-team">
+                    <p> {{match.arabic_guest_team_2}}</p>
+                </div>
+                <div class="logo-team">
+                    <img src="../../../static/imag/{{match.logo_guest_team_2}}.png" alt="{{match.logo_guest_team_2}}">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="card-match-video">
+        <div class="select-link">
+            <ul class="b-color-1 color-1 ">
+                <li name="link-one" class="active">
+                    <div >
+                        البث الرئيسي                                      
+                    </div>
+                </li>
+                <li name="link-tow_hd" >
+                    <div>
+                        HD جودة عالية
+                    </div>
+                </li>
+                <li name="link-three_sd">
+                    <div>
+                        جودة متوسطة
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div id="link-one" style="display: none">{{match.link_1}}</div>
+        <div id="link-tow_hd" style="display: none">{{match.link_2}}</div>
+        <div id="link-three_sd" style="display: none">{{match.link_3}}</div>
+        <div class="view" id="view"></div>
+
+        
+        
+        
+    </div>
+    <div class="card-match-down card-match-live-down b-color-2   color-1">
+        <ul>
+            <li>
+                <p>{{match.commentator}}</p>
+
+            </li>
+            <li>
+                <p>{{match.lig}}</p>
+            </li>
+            <li>
+                <p class="en">{{match.channel}}</p>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</div>
+
+{% endblock %}
