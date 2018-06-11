@@ -1,13 +1,25 @@
 $(document).ready(function(){
+    // size screen 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //soical media-----------------------------
 
-    var  theDay = $(".day");
+/*    var  theDay = $(".day");
     function anmaTe (d) {
         var cards = d.find(".card-match");
         cards.addClass("animate");     
     }
     
-    anmaTe(theDay);
+    anmaTe(theDay);*/
     
     (function selctDay () {
         var buttonDay = $(".select-day").find("li");
@@ -98,10 +110,103 @@ $(document).ready(function(){
     
     
     (function () {
+        var WidthWindow = $(window).width(),
+            htmlV = `
+                  <div class="toggle-button color-1">
+                <div name="liga">ترتيب الدوريات</div>
+                <div name="goals" class="active" >أهدلف وملخصات</div>
+                </div>
+                
+                    <div class="side-content">
+
+                        <div id="liga" class="lig">
+                            <table>
+                                <tr>
+                                    <th class="table-name" colspan="5">الدوري الانجليزي الممتاز</th>
+                                </tr>
+                                <tr>
+                                    <th>مركز</th>
+                                    <th>النادي</th>
+                                    <th>لعب</th>
+                                    <th>أهداف</th>
+                                    <th>نقاط</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ريال مدريد</td>
+                                    <td>45</td>
+                                    <td>+88</td>
+                                    <td>101</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ريال مدريد</td>
+                                    <td>38</td>
+                                    <td>+88</td>
+                                    <td>101</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ريال مدريد</td>
+                                    <td>38</td>
+                                    <td>+88</td>
+                                    <td>101</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ريال مدريد</td>
+                                    <td>38</td>
+                                    <td>+88</td>
+                                    <td>101</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    <div id="goals" class="goals active">
+                        <div class="card-goals">
+                            <div class="goals-title">
+                                <h2>مـلـخـص و أهــداف</h2>
+                                <p>ريال مدريد</p>
+                                <p>vs</p>
+                                <p>برشلونة</p>
+                            </div>
+                            <div class="goals-video">
+                                <iframe src="https://www.youtube.com/embed/I9LEezIONFQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <div class="goals-info">
+                                <p class="en" style="font-size: 1.3em">2018-5-26</p>
+                                <p>تعليق :  عصام الشوالي</p>
+                            </div>
+                        </div>
+                        <div class="card-goals">
+                            <div class="goals-title">
+                                <h2>ملخص و أهداف</h2>
+                                <p>ريال مدريد</p>
+                                <p>vs</p>
+                                <p>برشلونة</p>
+                            </div>
+                            <div class="goals-video">
+                                <iframe  src="//www.ok.ru/videoembed/759141501548" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                            </div>
+                            <div class="goals-info">
+                                <p class="en" style="font-size: 1.3em">2018-5-26</p>
+                                <p>تعليق :  عصام الشوالي</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+`;
+        if (WidthWindow > 768) {
+            $(".side-bar").html(htmlV);
+            /*var changeSize = $("#change-size");
+            changeSize.attr("href", "/static/css/base.css");*/
+        }
         $(".toggle-button div").click(function () {
             var selected = $(this).attr("name");
             if ($(this).hasClass("active")) {
-                console.log("i hass class");
+                console.log("i hass class"+WidthWindow);
             } else {
                 $(this).addClass("active").siblings().removeClass("active");
                 $("div[id=" + selected +"]").addClass("active").siblings().removeClass();
@@ -146,7 +251,7 @@ $(document).ready(function(){
     }());
     
     
-    //-----------------------------امنع الافتراضي -------------------------------------------------------------------------------------------
+    //-----------------------------امنع الافتراضي لم يبدا البث -------------------------------------------------------------------------------------------
     
     (function () {
         $(".noneHover").click(function (event) {
@@ -166,7 +271,7 @@ $(document).ready(function(){
     
     
     
-        //-----------------------------امنع الافتراضي -------------------------------------------------------------------------------------------
+        //-----------------------------امنع الافتراضي لم يبدا البث  -------------------------------------------------------------------------------------------
 
     
     //change links ----------------------------------------------------------------------------------------------------------------------

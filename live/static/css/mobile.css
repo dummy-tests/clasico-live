@@ -1,0 +1,276 @@
+.setting {
+    width: 150px;
+    height: 150px;
+     border-radius: 25px;   
+
+}
+
+.setting span {
+    font-size: 2em;
+}
+.setting p {
+    width: 120px;
+    height: 60px;
+    min-height: 60px;
+    min-width: 120px;
+
+   
+}
+
+
+.setting p span {
+    width: 56px;
+    height: 56px;
+    min-height: 56px;
+    min-width: 56px;
+
+}
+.setting p span.active {
+    left: 60px;
+}
+.hedar {
+    height: 300px;
+    padding: 75px 25px;
+    margin-top: 100px
+  
+}
+.container {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+.hedar .logo .logo-img1,.hedar .logo .logo-img2 {
+    padding: 0;
+}
+
+.message {
+    height: 100px;
+}
+.message ul {
+    width: 100%;
+}
+.message ul li {
+    line-height: 100px;
+    font-size: 2.5em;
+    min-width: calc(100% / 4);
+    text-align: center;
+}
+
+.message ul .active {
+    border-bottom: 8px solid;
+
+
+}
+
+.message .soical-media {
+    width: 100%;
+    float: none;
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+
+.message .soical-media span {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    font-size: 3.5em;
+    line-height: 100px;
+    text-align: center;  
+    direction: rtl;
+    
+}
+
+
+.message .soical-media i {
+    width: calc(75%/4);
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 3.5em;
+    transition: .5s
+}
+
+.content .side-bar {
+
+    display: none;
+}
+
+
+.content .list-match {
+    width: 100%;
+    float: none;
+
+}
+
+
+.select-day ul {
+    height: 100px;
+    
+}
+
+.select-day ul li {
+
+    line-height: 100px;
+    font-size: 3em;
+    border: 3px solid;
+    border-radius: 10px;
+
+}
+
+.card-match {
+    height: 200px;
+    min-height: 200px;
+    border-top: 10px solid #38003c;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+
+}
+
+.card-match .card-match-up ul li span {
+
+    line-height: 140px;
+
+}
+
+.card-match .card-match-up ul li button {
+    font-size: 1.5em;
+     border: 6px solid ;
+
+
+}
+
+.card-match .card-match-up ul li .logo-team {
+    width: 140px;
+    height: 100%;
+}
+
+.card-match .card-match-up ul li .name-team {
+    width: calc(100% - 140px);
+}
+
+ul li .name-team p {
+    line-height: 140px;
+    font-size: 2.5em
+}
+
+.card-match .card-match-down ul li p {
+    font-size: 2em;
+    line-height: 60px;
+}
+
+.en {
+
+    font-size: 2.5em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-match-live {
+    margin: 0 auto !important;
+    height: auto;
+    min-height: auto;
+
+}
+.card-match-live-up {
+    height: 70%;
+    
+}
+.button-size {
+    font-size: 2.5em;
+}
+.card-match-video {
+    height:600px;
+}
+.card-match-video .view {
+    width: 96%  !important;
+    height: 450px  !important;
+    margin: 0 auto;
+    background: #DDD
+    
+}
+
+
+.card-match-video iframe {
+    width: 100% !important;
+    height: 100% !important;
+}
+.card-match-live-down {
+    height: 30% !important;
+}
+
+
+/*---------------------------------------select link------------------------*/
+.select-link ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 96%;
+    margin: 25px auto;
+    height: 100px;
+    
+    
+    
+}
+.select-link ul li {
+    list-style: none;
+    width: 33.333333%;
+    min-height: 100px;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+    background: #fff;
+    
+    border: 3px solid;
+    border-radius: 10px;
+    line-height: 100px;
+    font-size: 3em;
+    transition: .5s;
+    height: 100%;
+
+
+}
+
+
+.select-link ul li:hover {
+    background: #38003c;
+    color: #00ff85;
+    border-color: #38003c;
+    cursor: pointer;
+}
+/*--------------------------------end---select link-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------start query respons-------------------------------------------------*/

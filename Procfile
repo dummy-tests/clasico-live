@@ -1,1 +1,1 @@
-web: gunicorn run:manage.py
+web: gunicorn footBall.wsgi
