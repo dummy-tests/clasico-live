@@ -1,1 +1,1 @@
-web: gunicorn footBall.wsgi
+web: gunicorn footBall.wsgi --log-file -

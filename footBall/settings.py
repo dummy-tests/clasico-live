@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    '192.168.1.103'
+    '192.168.1.105'
 ]
 
 
@@ -126,5 +126,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
