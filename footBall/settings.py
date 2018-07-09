@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    '192.168.1.105'
+    '192.168.1.106',
+    '192.168.1.100'
 ]
 
 
@@ -128,3 +129,4 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
+STATIC_ROOT = "/var/www/example.com/static/"

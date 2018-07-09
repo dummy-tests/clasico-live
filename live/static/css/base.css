@@ -23,9 +23,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: AlHurra;
+    background: url(../../static/imag/bgMatch.png) repeat;
 
 
 }
+
 
 .en {
     font-family: myFirstFont;
@@ -144,74 +146,48 @@ body {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    padding: 25px;
 
 
 }
-.hedar .overlaye {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-
-}
-.hedar .logo {
-    width: 100%;
-    height: 100%;
+.hedar .container {
     overflow: hidden;
-    
-
 }
-.hedar .logo .logo-img1 {
+.hedar .logo-img1 {
     width: 30%;
-    height: 100%;
+    height: 150px;
     display: inline-block;
     float: left;
     padding: 0 25px;
+    margin: 25px 0;
 }
-.hedar .logo .logo-img2 {
+.hedar  .logo-img2 {
     width: 30%;
-    height: 100%;
+    height: 150px;
     display: inline-block;
     float: left;
     padding: 0 25px;
     direction: rtl;
+    margin: 25px 0;
 }
-.hedar .logo .logo-img1 img {
+.hedar  .logo-img1 img {
     width: 150px;
     height: 150px;
 }
-.hedar .logo .logo-img2 img {
+.hedar .logo-img2 img {
     width: 150px;
     height: 150px;
 }
-.hedar .logo .logo-name {
+.hedar  .logo-img {
     width: 40%;
-    height: 100%;
+    height: 180px;
     display: inline-block;
     float: left;
     text-align: center;
+    margin: 10px 0;
 
 }
-.hedar .logo .logo-name div {
+.hedar .logo-img img {
     height: 100%;
-    width: 300px;
-    border: 5px solid;
-    border-bottom: none;
-    margin: 0 auto;
-/*    background: rgba(221, 221, 221, 0.2);*/
-    
-}
-.hedar .logo .logo-name div h1 {
-    height: 80%;
-    line-height: 120px;
-    padding: 0;
-    margin: 0
-}
-.hedar .logo .logo-name div h2 {
-    height: 20%;
-    line-height: 30px;
-    padding: 0;
-    margin: 0
 }
 
 

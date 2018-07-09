@@ -14,6 +14,7 @@
     height: 60px;
     min-height: 60px;
     min-width: 120px;
+
     
 
    
@@ -32,7 +33,7 @@
 }
 .hedar {
     height: 300px;
-    padding: 75px 25px;
+    padding: 0 25px;
     
   
 }
@@ -42,9 +43,21 @@
     height: 100%;
 }
 
-.hedar .logo .logo-img1,.hedar .logo .logo-img2 {
+.hedar .logo-img1,.hedar .logo-img2 {
     padding: 0;
+    margin: 75px 0;
+    width: 25%;
+    height: 150px
 }
+.hedar .logo-img {
+    width: 50%; 
+    height: 280px;
+}
+.hedar .logo-img img {
+    width: 100%;
+    height: 90%;
+}
+
 
 .message {
     height: 100px;
@@ -160,7 +173,7 @@
 
 ul li .name-team p {
     line-height: 140px;
-    font-size: 2.5em
+    font-size: 2em
 }
 
 .card-match .card-match-down ul li p {
