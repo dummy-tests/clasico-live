@@ -29,7 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.1.106',
-    '192.168.1.100'
+    '192.168.1.100',
+    'classico-dev.us-east-1.elasticbeanstalk.com'
 ]
 
 
